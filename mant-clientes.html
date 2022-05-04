@@ -359,8 +359,6 @@
 
 		//------------------------------------//
 		$ ( document ).ready(function() {
-			$('#dataTable').DataTable({
-			
 			$.ajax({
 				type: 'GET',
 				url: 'https://gcejidsapp.herokuapp.com/pinnacleapp/api/V1/Clientes/',
@@ -385,8 +383,6 @@
 				error: function() {
 					alert('Error!');
 				}
-			});
-			
 			});
 		}); 
 		
