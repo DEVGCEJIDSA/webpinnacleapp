@@ -363,7 +363,7 @@
 			
 			$.ajax({
 				type: 'GET',
-				url: 'http://localhost:8080/pinnacleapp/api/V1/Clientes/',
+				url: 'https://gcejidsapp.herokuapp.com/pinnacleapp/api/V1/Clientes/',
 				mimeType: 'json',
 				success: function(data) {
 					$.each(data, function(i, data) {
@@ -402,7 +402,7 @@
 					var email = document.getElementById("inputemail").value;
 					var responsable = document.getElementById("inputresponsable").value;
 
-					var url = 'http://localhost:8080/pinnacleapp/api/V1/Clientes/';
+					var url = 'https://gcejidsapp.herokuapp.com/pinnacleapp/api/V1/Clientes/';
 
 					var data = {descripcion: descripcion, direccion: direccion, ruc: ruc, dv: dv, telefono: telefono, movil: movil, email: email, responsable: responsable};
 
@@ -431,7 +431,7 @@
 		
 					var id = document.getElementById("inputid").value;
 
-					var url = 'http://localhost:8080/pinnacleapp/api/V1/Clientes/'+id;
+					var url = 'https://gcejidsapp.herokuapp.com/pinnacleapp/api/V1/Clientes/'+id;
 
 					var data = {};
 

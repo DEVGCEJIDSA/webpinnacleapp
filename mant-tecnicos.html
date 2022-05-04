@@ -305,7 +305,7 @@
 		$ ( document ).ready(function() {
 			$.ajax({
 				type: 'GET',
-				url: 'http://localhost:8080/pinnacleapp/api/V1/Tecnicos/',
+				url: 'https://gcejidsapp.herokuapp.com/pinnacleapp/api/V1/Tecnicos/',
 				mimeType: 'json',
 				success: function(data) {
 					$.each(data, function(i, data) {
@@ -329,7 +329,7 @@
 
 					var descripcion = document.getElementById("inputdescripcion").value;
 
-					var url = 'http://localhost:8080/pinnacleapp/api/V1/Tecnicos/';
+					var url = 'https://gcejidsapp.herokuapp.com/pinnacleapp/api/V1/Tecnicos/';
 
 					var data = {descripcion: descripcion};
 
@@ -361,7 +361,7 @@
 		
 					var id = document.getElementById("inputid").value;
 
-					var url = 'http://localhost:8080/pinnacleapp/api/V1/Tecnicos/'+id;
+					var url = 'https://gcejidsapp.herokuapp.com/pinnacleapp/api/V1/Tecnicos/'+id;
 
 					var data = {};
 
